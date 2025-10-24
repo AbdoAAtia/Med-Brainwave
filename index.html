@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Med Brainwave - Multi-Stage Quiz</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header-controls" style="text-align: right; margin-bottom: -30px;">
+            <button id="sound-toggle-btn" class="control-btn" onclick="toggleSound()" title="Sound Enabled (Click to Disable)" style="font-size: 1.5em; padding: 5px 10px;">
+                🔊
+            </button>
+        </div>
+        
+        <h1 class="centered-title">Med Brainwave</h1>
+
+        <div id="quiz-container">
+
+            <div class="step" id="step-1">
+                <h2>1. Select University</h2>
+                <button class="year-box" onclick="selectUniversity()">NUB</button>
+            </div>
+
+            <div class="step hidden" id="step-2">
+                <button class="control-btn go-back-btn" onclick="goToStartStep()">Go to Start</button>
+                <h2>2. Select Academic Year</h2>
+                <div class="year-selection">
+                    <button class="year-box" data-year="1" onclick="selectYear(1)">Year 1</button>
+                    <button class="year-box" data-year="2" onclick="selectYear(2)">Year 2</button>
+                    <button class="year-box" data-year="3" onclick="selectYear(3)">Year 3</button>
+                    <button class="year-box" data-year="4" onclick="selectYear(4)">Year 4</button>
+                    <button class="year-box" data-year="5" onclick="selectYear(5)">Year 5</button>
+                </div>
+            </div>
+
+            <div class="step hidden" id="step-3">
+                <button class="control-btn go-back-btn" onclick="goToStartStep()">Go to Start</button>
+                <h2>3. Select Subject</h2>
+                <div id="subject-list" class="subject-selection">
+                    </div>
+            </div>
+
+            <div class="step hidden" id="step-4">
+                <button class="control-btn go-back-btn" onclick="goToStartStep()">Go to Start</button>
+                <h2>4. Select Lesson/Chapter</h2>
+                <div id="lesson-list" class="subject-selection">
+                    </div>
+            </div>
+
+            <div class="step hidden" id="step-5">
+                <button class="control-btn go-back-btn" onclick="goToStartStep()">Go to Start</button>
+                <h2>5. Answer the Questions</h2>
+                
+                <button class="control-btn" onclick="revealAllAnswers()" style="margin-bottom: 20px; background-color: #f39c12; color: white;">
+                    Reveal All Answers
+                </button>
+
+                <div id="questions-display">
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="control-btn hidden" onclick="navigateQuestion(-1)">Previous</button> 
+            <button id="next-btn" class="control-btn hidden" onclick="continueQuizOrSubmit()">Continue</button>
+        </div>
+
+        <div id="result" class="result"></div>
+        
+        <footer class="footer-credit">
+            © 2025 Med Brainwave Created by Abdo A. Atia All rights reserved
+        </footer>
+    </div>
+
+    <audio id="correct-sound" src="clap.mp3" preload="auto"></audio>
+    <audio id="incorrect-sound" src="alert.mp3" preload="auto"></audio>
+    
+    <script src="quiz-data-master.js"></script> 
+    <script src="HIS102-CELL1.js"></script>
+    <script src="BIO103-amino.js"></script>
+    <script src="PHY101-intro.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

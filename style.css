@@ -1,0 +1,251 @@
+body {
+    font-family: Arial, sans-serif;
+    /* Gradient Background: Red to Blue */
+    background: linear-gradient(135deg, #FF6347 0%, #4682B4 100%); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    /* اتجاه الـ body يبقى rtl لترتيب عناصر الصفحة الرئيسية */
+    direction: rtl; 
+    text-align: right; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    
+    width: 95%; 
+    max-width: 800px; 
+    
+    opacity: 0.95;
+    margin: 20px auto;
+}
+
+.centered-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #4682B4; 
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Stage 1: Fixed NUB Info */
+.fixed-info-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Stage 2 & 3 & 4: Selection Boxes (Vertical) */
+.year-selection, .subject-selection {
+    display: block; 
+    width: 100%; 
+    margin: 20px auto; 
+}
+
+.year-box, .subject-box {
+    width: 100%;
+    padding: 15px;
+    background-color: #f0f8ff;
+    border: 1px solid #cceeff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-bottom: 15px; 
+    box-sizing: border-box;
+}
+
+.year-box:hover, .subject-box:hover {
+    background-color: #dbe9ff;
+    border-color: #4682B4;
+    color: #4682B4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.selected-item {
+    background-color: #4682B4 !important;
+    color: white !important;
+    border-color: #4682B4 !important;
+}
+
+
+/* --- Step & Go Back Button Styling --- */
+
+.step {
+    position: relative; 
+    padding-top: 50px; /* مسافة للزر في الأعلى */
+}
+
+.step h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* تنسيقات زر الرجوع (Go to Start) */
+.go-back-btn {
+    position: absolute; 
+    top: 20px; 
+    left: 20px; /* تم وضعه في اليسار ليناسب اتجاه الصفحة rtl */
+    
+    background-color: #e74c3c;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    z-index: 10; 
+}
+
+/* إخفاء زر الرجوع في المرحلة الأولى */
+#step-1 .go-back-btn {
+    display: none;
+}
+
+
+/* --- Stage 5: Questions Styling (Fixing direction to LTR) --- */
+
+/* فرض الاتجاه من اليسار لليمين على حاوية الأسئلة */
+#questions-display {
+    direction: ltr;
+    text-align: left;
+}
+
+.question {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: #333;
+    text-align: left; /* محاذاة النص لليسار */
+}
+
+/* تنسيق خيارات الإجابات */
+.answers label {
+    display: block;
+    margin: 8px 0;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: left; /* محاذاة النص لليسار */
+}
+
+.answers label:hover {
+    background-color: #f0f0f0;
+}
+
+/* تنسيق التقييم الفوري (Feedback) */
+.feedback-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+/* Explanation Styling */
+.explanation {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f0f0ff; 
+    /* حدود الشرح على اليسار */
+    border-left: 5px solid #4682B4; 
+    border-right: none; 
+    border-radius: 4px;
+    font-style: normal;
+    color: #333;
+    display: none; 
+    text-align: left; /* محاذاة النص لليسار */
+}
+
+
+/* --- Result and Controls (الإخفاء وتنسيق النتيجة) --- */
+
+/* القاعدة لإخفاء المستطيل (#result) عندما يكون فارغاً */
+#result:empty {
+    display: none; 
+}
+
+/* تنسيق لعنصر النتيجة #result عند ملئه */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    background-color: transparent !important; 
+    border: none !important; 
+    border-radius: 5px;
+}
+
+.controls {
+    display: flex;
+    /* ✅ التعديل: عكس ترتيب الأزرار لجعل "Next" على اليمين */
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.control-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#prev-btn { 
+    background-color: #6c757d; 
+    color: white; 
+}
+#next-btn { 
+    background-color: #4682B4; 
+    color: white; 
+    width: auto; 
+    min-width: 180px;
+}
+
+/* تنسيقات عرض النتائج النهائية */
+.correct-answer {
+    color: green;
+    font-weight: bold;
+    background-color: #e6ffe6;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.incorrect-answer {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe6e6;
+    padding: 5px;
+    border-radius: 4px;
+}
+.footer-credit {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 0;
+    font-size: 0.8em;
+    color: #888;
+    border-top: 1px solid #eee; /* ترك خط فاصل خفيف */
+    width: 100%;
+}
