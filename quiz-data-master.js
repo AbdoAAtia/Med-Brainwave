@@ -14,7 +14,7 @@ window.QUIZ_APP_DATA = {
             code: "HIS102", 
             lessons: [
                 // كود الدرس هو CELL1، وسيتم تحميل أسئلته من الملف المنفصل
-                { name: "Cell 1 Structure", code: "CELL1" }, 
+                { name: "Cytology", code: "CELL1" }, 
                 // مثال لدرس جديد 
             ]
         }, 
