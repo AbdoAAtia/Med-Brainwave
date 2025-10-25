@@ -151,80 +151,77 @@ window.QUIZ_APP_DATA.questions["HIS102-CELL2"] = [
         explanation: "The basal body, which anchors the cilium, is structurally identical to a **Centriole**."
     },
     
-    // II-Put true or false and correct the wrong one:
+    // II-Put true or false and correct the wrong one (Questions 26-32):
     {
-        question: "True or False: 1. Endothelium is a type of epithelium appears stratified, but is not.",
+        question: "26. True or False: Endothelium is a type of epithelium appears stratified, but is not.",
         answers: { a: "True", b: "False" },
         correctAnswer: "b",
         explanation: "**False**. The epithelium that appears stratified but is not is **Pseudostratified** epithelium. Endothelium is simple squamous."
     },
     {
-        question: "True or False: 2. The epithelium rest on muscular tissue.",
+        question: "27. True or False: The epithelium rest on muscular tissue.",
         answers: { a: "True", b: "False" },
         correctAnswer: "b",
         explanation: "**False**. The epithelium rests on a **basement membrane** (which separates it from underlying connective tissue)."
     },
     {
-        question: "True or False: 3. Stratified squamous epithelium rest on a clear & wavy basement membrane.",
+        question: "28. True or False: Stratified squamous epithelium rest on a clear & wavy basement membrane.",
         answers: { a: "True", b: "False" },
         correctAnswer: "a",
         explanation: "**True**."
     },
     {
-        question: "True or False: 4. Simple squamous epithelium is composed of one layer of flat cells.",
+        question: "29. True or False: Simple squamous epithelium is composed of one layer of flat cells.",
         answers: { a: "True", b: "False" },
         correctAnswer: "a",
         explanation: "**True**. Simple squamous epithelium consists of a single layer of flattened, plate-like cells."
     },
     {
-        question: "True or False: 5. Uterus is lined by simple squamous endothelium.",
+        question: "30. True or False: Uterus is lined by simple squamous endothelium.",
         answers: { a: "True", b: "False" },
         correctAnswer: "b",
         explanation: "**False**. The uterus is lined by **Simple columnar epithelium**."
     },
     {
-        question: "True or False: 6. In Transitional epithelium. The superficial cells may be binucleated.",
+        question: "31. True or False: In Transitional epithelium. The superficial cells may be binucleated.",
         answers: { a: "True", b: "False" },
         correctAnswer: "a",
         explanation: "**True**. The superficial umbrella cells of Transitional epithelium are often binucleated."
     },
     {
-        question: "True or False: 7. Taste bud is an example of myoepithelium.",
+        question: "32. True or False: Taste bud is an example of myoepithelium.",
         answers: { a: "True", b: "False" },
         correctAnswer: "b",
         explanation: "**False**. A Taste bud is an example of **Neuro-epithelium**."
-    }
-];
+    },
 
-// III-Answer the following questions (Sites for Epithelium):
-// Note: This section is added separately for better organization as it addresses question type III from the PDF.
-window.QUIZ_APP_DATA.questions["HIS102-CELL2_SITES"] = [
+    // III-Answer the following questions (Sites for Epithelium - Questions 33-37):
     {
-        question: "III. Mention the lining epithelium of the following sites: a- Skin (Epidermis)",
+        question: "33. Mention the lining epithelium of the following sites: a- Skin (Epidermis)",
         answers: { a: "Simple cuboidal", b: "Simple columnar", c: "Stratified squamous keratinized", d: "Pseudostratified" },
         correctAnswer: "c",
         explanation: "The **Skin** (Epidermis) is lined by **Stratified squamous keratinized epithelium**."
     },
     {
-        question: "III. Mention the lining epithelium of the following sites: b- Thyroid follicle",
+        question: "34. Mention the lining epithelium of the following sites: b- Thyroid follicle",
         answers: { a: "Simple cuboidal", b: "Simple squamous", c: "Transitional", d: "Simple columnar" },
         correctAnswer: "a",
         explanation: "The **Thyroid follicle** is lined by **Simple cuboidal epithelium**."
     },
     {
-        question: "III. Mention the lining epithelium of the following sites: c- Lung alveoli",
+        question: "35. Mention the lining epithelium of the following sites: c- Lung alveoli",
         answers: { a: "Simple cuboidal", b: "Simple squamous", c: "Stratified squamous", d: "Pseudostratified" },
         correctAnswer: "b",
         explanation: "The **Lung alveoli** are lined by **Simple squamous epithelium** (Type I pneumocytes)."
     },
     {
-        question: "III. Mention the lining epithelium of the following sites: d- Urinary bladder",
+        question: "36. Mention the lining epithelium of the following sites: d- Urinary bladder",
         answers: { a: "Simple cuboidal", b: "Simple squamous", c: "Transitional", d: "Simple columnar" },
         correctAnswer: "c",
         explanation: "The **Urinary bladder** is lined by **Transitional epithelium** (Urothelium)."
     },
     {
-        question: "III. Mention the lining epithelium of the following sites: e- Stomach",
+        question: "37. Mention the lining epithelium of the following sites: e- Stomach",
         answers: { a: "Simple cuboidal", b: "Simple squamous", c: "Stratified squamous", d: "Simple columnar non-ciliated" },
         correctAnswer: "d",
         explanation: "The **Stomach** is lined by **Simple columnar non-ciliated epithelium**."
