@@ -198,7 +198,7 @@ window.QUIZ_APP_DATA.questions["HIS102-CELL2"] = [
 
 // III-Answer the following questions (Sites for Epithelium):
 // Note: This section is added separately for better organization as it addresses question type III from the PDF.
-window.QUIZ_APP_DATA.questions["HIS102-EPI1_SITES"] = [
+window.QUIZ_APP_DATA.questions["HIS102-CELL2_SITES"] = [
     {
         question: "III. Mention the lining epithelium of the following sites: a- Skin (Epidermis)",
         answers: { a: "Simple cuboidal", b: "Simple columnar", c: "Stratified squamous keratinized", d: "Pseudostratified" },
