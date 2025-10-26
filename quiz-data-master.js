@@ -20,7 +20,9 @@ window.QUIZ_APP_DATA = {
             ]
         }, 
         
-        { year: 1, name: "Biochemistry", code: "BIO103", lessons: [ { name: "amino acids", code: "amino" }
+        { year: 1, name: "Biochemistry", code: "BIO103", lessons: [ { name: "amino acids", code: "amino" } ,
+                { name: "Carbohydrates", code: "CARB" },
+                { name: "Lipids", code: "LIPID" },
         ] },
         
         // --- YEAR 2 ---
