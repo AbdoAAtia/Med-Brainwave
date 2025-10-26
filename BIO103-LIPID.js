@@ -237,7 +237,7 @@ window.QUIZ_APP_DATA.questions["BIO103-LIPID"] = [
         question: "39. omega-3 fatty acids are essential because:",
         answers: { a: "They are saturated.", b: "They are polar.", c: "They are long chain.", d: "We lack the enzyme to form double bonds at the omega-3 position." },
         correctAnswer: "d",
-        explanation: "Humans lack the necessary desaturase enzymes ($\Delta12$ and $\Delta15$) to introduce double bonds at the omega-3 and omega-6 positions."
+        explanation: "Humans lack the necessary desaturase enzymes  to introduce double bonds at the omega-3 and omega-6 positions."
     },
     {
         question: "40. FA with 20C and four double bonds is:",
