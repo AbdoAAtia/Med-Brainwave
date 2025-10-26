@@ -48,12 +48,6 @@ window.QUIZ_APP_DATA.questions["BIO103-amino"] = [
         explanation: "**D (Aspartate)** and **E (Glutamate)** are the acidic amino acids."
     },
     {
-        question: "8. Positively charged amino acids (Basic amino acids) are:",
-        answers: { a: "P and R", b: "L and T", c: "K and R and H", d: "H and M", e: "N and F" },
-        correctAnswer: "c",
-        explanation: "**K (Lysine)**, **R (Arginine)**, and **H (Histidine)** have side chains that are typically positively charged at physiological pH."
-    },
-    {
         question: "9. Which amino acid can form disulphide bonds?",
         answers: { a: "Glycine", b: "Proline", c: "Glutamate", d: "Cysteine" },
         correctAnswer: "d",
