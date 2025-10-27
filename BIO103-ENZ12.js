@@ -1,9 +1,15 @@
-if (!window.QUIZ_APP_DATA) {
-  window.QUIZ_APP_DATA = { questions: {} };
-}
+/**
+ * هذا المقطع يتأكد من وجود الكائن العام window.QUIZ_APP_DATA.
+ * إذا لم يكن موجودًا، يقوم بإنشائه مع خاصية questions فارغة.
+ */
 
-window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
-  {
+
+
+/**
+ * إضافة بيانات أسئلة اختبار الإنزيمات (BIO103-ENZYMES) إلى الكائن.
+ * كل عنصر في المصفوفة يمثل سؤالاً واحدًا.
+ */
+window.QUIZ_APP_DATA.questions["BIO103-ENZ12"] = [{
     question: "1. All the following statements are true with regard to enzymes EXCEPT:",
     answers: {
       a: "Enzymes lower activation energy.",
@@ -12,8 +18,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Most of the enzymes are proteins in nature."
     },
     correctAnswer: "b",
-    explanation:
-      "Enzymes speed up reactions by lowering activation energy but do not alter the equilibrium of the reaction."
+    explanation: "Enzymes speed up reactions by lowering activation energy but do not alter the equilibrium of the reaction."
   },
   {
     question: "2. In competitive inhibition:",
@@ -24,8 +29,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Reaction rate is independent of substrate concentration."
     },
     correctAnswer: "a",
-    explanation:
-      "In competitive inhibition, the inhibitor resembles the substrate and competes for the enzyme’s active site."
+    explanation: "In competitive inhibition, the inhibitor resembles the substrate and competes for the enzyme’s active site."
   },
   {
     question: "3. What type of enzyme inhibitor would have the following effects: Vmax unchanged, Km increased?",
@@ -36,8 +40,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Non-competitive inhibition"
     },
     correctAnswer: "a",
-    explanation:
-      "A competitive reversible inhibitor increases Km but leaves Vmax unchanged because increasing substrate concentration can overcome inhibition."
+    explanation: "A competitive reversible inhibitor increases Km but leaves Vmax unchanged because increasing substrate concentration can overcome inhibition."
   },
   {
     question: "4. Enzymes which are produced in inactive form in the living cells are called:",
@@ -48,8 +51,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Proenzymes"
     },
     correctAnswer: "d",
-    explanation:
-      "Proenzymes (zymogens) are inactive precursors that are activated when needed, often by cleavage of peptide bonds."
+    explanation: "Proenzymes (zymogens) are inactive precursors that are activated when needed, often by cleavage of peptide bonds."
   },
   {
     question: "5. The non-protein part of an enzyme is called:",
@@ -61,8 +63,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "Coenzyme"
     },
     correctAnswer: "e",
-    explanation:
-      "Coenzymes are organic, non-protein molecules (often derived from vitamins) that assist enzymes during catalysis."
+    explanation: "Coenzymes are organic, non-protein molecules (often derived from vitamins) that assist enzymes during catalysis."
   },
   {
     question: "6. These enzymes have different structures but the same catalytic function. They are called:",
@@ -73,8 +74,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Zymogens"
     },
     correctAnswer: "b",
-    explanation:
-      "Isoenzymes (isozymes) are different structural forms of the same enzyme that catalyze the same reaction but may differ in properties."
+    explanation: "Isoenzymes (isozymes) are different structural forms of the same enzyme that catalyze the same reaction but may differ in properties."
   },
   {
     question: "7. Allosteric inhibition of an enzyme involves which of the following?",
@@ -85,8 +85,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Allosteric inhibitors increase the affinity of the enzyme to its substrate."
     },
     correctAnswer: "a",
-    explanation:
-      "Allosteric inhibitors bind to a regulatory site distinct from the active site, causing conformational changes that reduce enzyme activity."
+    explanation: "Allosteric inhibitors bind to a regulatory site distinct from the active site, causing conformational changes that reduce enzyme activity."
   },
   {
     question: "8. When the velocity of enzyme activity is plotted against substrate concentration, which of the following is obtained?",
@@ -97,8 +96,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "A straight line with a negative slope"
     },
     correctAnswer: "a",
-    explanation:
-      "A hyperbolic curve is obtained according to the Michaelis–Menten equation, showing enzyme saturation at high substrate concentrations."
+    explanation: "A hyperbolic curve is obtained according to the Michaelis–Menten equation, showing enzyme saturation at high substrate concentrations."
   },
   {
     question: "9. Michaelis constant (Km) of an enzyme is:",
@@ -109,8 +107,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "The enzyme concentration which gives maximal velocity."
     },
     correctAnswer: "b",
-    explanation:
-      "Km is the substrate concentration at which the enzyme reaches half of its maximum velocity (Vmax/2)."
+    explanation: "Km is the substrate concentration at which the enzyme reaches half of its maximum velocity (Vmax/2)."
   },
   {
     question: "10. Which of the following statements is true of enzyme catalysts?",
@@ -121,8 +118,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Their catalytic activity is independent of pH."
     },
     correctAnswer: "c",
-    explanation:
-      "Enzymes act as catalysts by lowering the activation energy required for a reaction, thereby speeding up the rate."
+    explanation: "Enzymes act as catalysts by lowering the activation energy required for a reaction, thereby speeding up the rate."
   },
   {
     question: "11. Which enzyme is increased in myocardial infarction?",
@@ -133,8 +129,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Creatine kinase (CK-MB)"
     },
     correctAnswer: "d",
-    explanation:
-      "Creatine kinase (CK-MB) is elevated in myocardial infarction, indicating heart muscle damage."
+    explanation: "Creatine kinase (CK-MB) is elevated in myocardial infarction, indicating heart muscle damage."
   },
   {
     question: "12. As regards isoenzymes, which of the following is incorrect:",
@@ -145,8 +140,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "They catalyze the same reaction."
     },
     correctAnswer: "a",
-    explanation:
-      "Isoenzymes have different polypeptide compositions, not identical chains."
+    explanation: "Isoenzymes have different polypeptide compositions, not identical chains."
   },
   {
     question: "13. Which statement is incorrect regarding feedback inhibition:",
@@ -157,8 +151,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "It is a type of competitive inhibition."
     },
     correctAnswer: "d",
-    explanation:
-      "Feedback inhibition is typically allosteric (noncompetitive), not competitive."
+    explanation: "Feedback inhibition is typically allosteric (noncompetitive), not competitive."
   },
   {
     question: "14. Enzymes accelerate reactions by _____ the activation energy.",
@@ -169,8 +162,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Binding"
     },
     correctAnswer: "c",
-    explanation:
-      "Enzymes accelerate reactions by lowering the activation energy barrier."
+    explanation: "Enzymes accelerate reactions by lowering the activation energy barrier."
   },
   {
     question: "15. In competitive inhibition, the inhibitor:",
@@ -181,8 +173,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Competes with the substrate."
     },
     correctAnswer: "d",
-    explanation:
-      "A competitive inhibitor competes with the substrate for the same active site."
+    explanation: "A competitive inhibitor competes with the substrate for the same active site."
   },
   {
     question: "16. The allosteric inhibitor of an enzyme:",
@@ -193,8 +184,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Denatures the enzyme."
     },
     correctAnswer: "c",
-    explanation:
-      "Allosteric inhibitors are often used in feedback regulation of metabolic pathways."
+    explanation: "Allosteric inhibitors are often used in feedback regulation of metabolic pathways."
   },
   {
     question: "17. When the velocity of enzyme activity is plotted against substrate concentration, which shape is obtained?",
@@ -205,8 +195,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Straight line with negative slope"
     },
     correctAnswer: "a",
-    explanation:
-      "Michaelis–Menten kinetics show a hyperbolic curve between reaction rate and substrate concentration."
+    explanation: "Michaelis–Menten kinetics show a hyperbolic curve between reaction rate and substrate concentration."
   },
   {
     question: "18. The drug allopurinol inhibits which enzyme?",
@@ -217,8 +206,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Xanthine oxidase"
     },
     correctAnswer: "d",
-    explanation:
-      "Allopurinol inhibits xanthine oxidase, reducing uric acid production in gout treatment."
+    explanation: "Allopurinol inhibits xanthine oxidase, reducing uric acid production in gout treatment."
   },
   {
     question: "19. In enzyme kinetics Km is:",
@@ -229,8 +217,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Half of the substrate concentration required to achieve Vmax."
     },
     correctAnswer: "a",
-    explanation:
-      "Km is the substrate concentration that produces half of the maximal velocity."
+    explanation: "Km is the substrate concentration that produces half of the maximal velocity."
   },
   {
     question: "20. NSAIDs such as aspirin act by inhibiting:",
@@ -241,8 +228,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Lipoprotein lipase"
     },
     correctAnswer: "b",
-    explanation:
-      "Aspirin and other NSAIDs inhibit cyclooxygenase (COX), blocking prostaglandin synthesis."
+    explanation: "Aspirin and other NSAIDs inhibit cyclooxygenase (COX), blocking prostaglandin synthesis."
   },
   {
     question: "21. Regulation of some enzymes by covalent modification involves addition or removal of:",
@@ -253,8 +239,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Coenzyme"
     },
     correctAnswer: "c",
-    explanation:
-      "Enzyme regulation often involves phosphorylation/dephosphorylation, adding or removing a phosphate group."
+    explanation: "Enzyme regulation often involves phosphorylation/dephosphorylation, adding or removing a phosphate group."
   },
   {
     question: "22. An inorganic ion required for enzyme activity is called:",
@@ -265,8 +250,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "None of the above"
     },
     correctAnswer: "b",
-    explanation:
-      "An inorganic ion such as Mg²⁺ or Zn²⁺ required for enzyme activity is called a cofactor."
+    explanation: "An inorganic ion such as Mg^{2+} or Zn^{2+} required for enzyme activity is called a **cofactor**."
   },
   {
     question: "23. The isozyme CK-MB increases in:",
@@ -277,8 +261,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Brain infarction"
     },
     correctAnswer: "b",
-    explanation:
-      "CK-MB is specific for cardiac muscle damage and increases after myocardial infarction."
+    explanation: "CK-MB is specific for cardiac muscle damage and increases after myocardial infarction."
   },
   {
     question: "24. Feedback inhibition is a common regulatory mechanism where the end product inhibits an early enzyme in the pathway.",
@@ -289,8 +272,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "It increases substrate concentration."
     },
     correctAnswer: "c",
-    explanation:
-      "Feedback inhibition prevents overproduction by allowing the final product to inhibit an early enzyme in the pathway."
+    explanation: "Feedback inhibition prevents overproduction by allowing the final product to inhibit an early enzyme in the pathway."
   },
   {
     question: "25. Phosphorylation/Dephosphorylation of enzymes:",
@@ -302,9 +284,9 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "All of the above is correct"
     },
     correctAnswer: "e",
-    explanation:
-      "Phosphorylation is a reversible, covalent modification that occurs on Ser/Thr residues and is mediated by kinases and phosphatases."
+    explanation: "Phosphorylation is a reversible, covalent modification that occurs on Ser/Thr residues and is mediated by kinases and phosphatases."
   },
+  // السؤال رقم 26 غير موجود في البيانات الأصلية - يبدأ بعده بـ 27
   {
     question: "27. Hydrolases include:",
     answers: {
@@ -315,9 +297,9 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "Epimerases and oxidases"
     },
     correctAnswer: "c",
-    explanation:
-      "Hydrolases break bonds using water. Examples include Esterases and Glucosidases."
+    explanation: "Hydrolases break bonds using water. Examples include Esterases and Glucosidases."
   },
+  // السؤال رقم 28 غير موجود في البيانات الأصلية - يبدأ بعده بـ 29
   {
     question: "29. Which of the following statements is true of enzyme catalysts?",
     answers: {
@@ -327,8 +309,7 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       d: "Their catalytic activity is independent of pH."
     },
     correctAnswer: "c",
-    explanation:
-      "Enzymes accelerate reactions by lowering activation energy without affecting equilibrium constants."
+    explanation: "Enzymes accelerate reactions by lowering activation energy without affecting equilibrium constants."
   },
   {
     question: "30. Isoenzymes:",
@@ -340,11 +321,11 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "Both C and D are correct"
     },
     correctAnswer: "e",
-    explanation:
-      "Lactate dehydrogenase (LDH) is an isoenzyme; isoenzymes are often used diagnostically."
+    explanation: "Lactate dehydrogenase (LDH) is an isoenzyme; isoenzymes are often used diagnostically."
   },
+  // السؤال رقم 31 غير موجود في البيانات الأصلية - يبدأ بعده بـ 32
   {
-    question: "32. Restriction enzymes:",
+    question: "31. Restriction enzymes:",
     answers: {
       a: "Recognize specific DNA sequences",
       b: "Cut both DNA strands",
@@ -353,11 +334,10 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "Do none of the above"
     },
     correctAnswer: "d",
-    explanation:
-      "Restriction enzymes recognize specific sequences, cut both strands, and often produce sticky ends."
+    explanation: "Restriction enzymes recognize specific sequences, cut both strands, and often produce sticky ends."
   },
   {
-    question: "33. Enzymes involved in hydrolysis:",
+    question: "32. Enzymes involved in hydrolysis:",
     answers: {
       a: "Are called decarboxylases",
       b: "Use folic acid as a coenzyme",
@@ -366,11 +346,10 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "Always require coenzyme"
     },
     correctAnswer: "d",
-    explanation:
-      "Hydrolases include peptidases, which hydrolyze peptide bonds."
+    explanation: "Hydrolases include peptidases, which hydrolyze peptide bonds."
   },
   {
-    question: "34. Enzymes and pH:",
+    question: "33. Enzymes and pH:",
     answers: {
       a: "All enzymes have one optimum pH",
       b: "Enzymes in the stomach require alkaline pH",
@@ -379,11 +358,11 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "The pH is the same in the lysosome and plasma"
     },
     correctAnswer: "d",
-    explanation:
-      "Each enzyme has an optimum pH for maximum activity (e.g., pepsin at low pH, trypsin at alkaline pH)."
+    explanation: "Each enzyme has an optimum pH for maximum activity (e.g., pepsin at low pH, trypsin at alkaline pH)."
   },
+  // السؤال رقم 35 غير موجود في البيانات الأصلية - يبدأ بعده بـ 36
   {
-    question: "36. The following vitamin works as a coenzyme with the corresponding enzyme:",
+    question: "34. The following vitamin works as a coenzyme with the corresponding enzyme:",
     answers: {
       a: "Biotin and carboxylases",
       b: "Cobalamin with isomerases",
@@ -392,7 +371,6 @@ window.QUIZ_APP_DATA.questions["BIO103-ENZYMES"] = [
       e: "Thiamin and isomerases"
     },
     correctAnswer: "a",
-    explanation:
-      "Biotin acts as a coenzyme for carboxylases, which catalyze CO₂ transfer reactions."
+    explanation: "Biotin acts as a coenzyme for carboxylases, which catalyze CO_2 transfer reactions."
   }
 ];
