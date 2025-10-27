@@ -24,7 +24,7 @@ window.QUIZ_APP_DATA = {
              { name: "amino acids", code: "amino" } ,
                 { name: "Carbohydrates", code: "CARB" },
                 { name: "Lipids", code: "LIPID" },
-                { name: "Enzymes", code: "CARB" }] },
+                { name: "Enzymes", code: "ENZ" }] },
         
         // --- YEAR 2 ---
         { year: 2, name: "Physiology", code: "PHY201", lessons: [{ name: "General Topics", code: "GEN" }] },
