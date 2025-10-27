@@ -9,7 +9,7 @@
  * إضافة بيانات أسئلة اختبار الإنزيمات (BIO103-ENZYMES) إلى الكائن.
  * كل عنصر في المصفوفة يمثل سؤالاً واحدًا.
  */
-window.QUIZ_APP_DATA.questions["BIO103-ENZ12"] = [{
+window.QUIZ_APP_DATA.questions["BIO103-NZ12"] = [{
     question: "1. All the following statements are true with regard to enzymes EXCEPT:",
     answers: {
       a: "Enzymes lower activation energy.",
