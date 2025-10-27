@@ -1,29 +1,47 @@
-const questions = [
+// --- quiz-enzymes.js ---
+// Enzyme questions stored as an array of objects
+
+
+
+window.QUIZ_APP_DATA.questions["BIO103-ENZ12"] = [
   {
-    // تم حذف السطر الزائد "Ompetitive inhibition:", من هنا
-    question: "29. Regarding competitive inhibition:",
+    question: "1. All the following statements are true with regard to enzymes EXCEPT:",
     answers: {
-      a: "Inhibitor has structural similarity to substrate.",
+      a: "Enzymes lower activation energy.",
+      b: "They alter the equilibrium of the reaction.",
+      c: "They accelerate the chemical reaction.",
+      d: "Most of the enzymes are proteins in nature."
+    },
+    correctAnswer: "b",
+    explanation:
+      "Enzymes speed up reactions by lowering the activation energy required, but they do not change the equilibrium of the reaction."
+  },
+  {
+    question: "2. In competitive inhibition:",
+    answers: {
+      a: "Inhibitor has structural similarity to the substrate.",
       b: "Km is decreased.",
       c: "Vmax is decreased.",
       d: "Reaction rate is independent of substrate concentration."
     },
     correctAnswer: "a",
-    explanation: "A competitive inhibitor resembles the substrate structurally and competes for binding at the enzyme’s active site."
+    explanation:
+      "In competitive inhibition, the inhibitor resembles the substrate and competes for the enzyme’s active site."
   },
   {
-    question: "30. The optimum pH of most of the enzymes is:",
+    question: "3. What type of enzyme inhibitor would have the following effects: Vmax unchanged, Km increased?",
     answers: {
-      a: "Between 2 and 4",
-      b: "Between 5 and 9",
-      c: "Between 8 and 12",
-      d: "Above 12"
+      a: "Competitive reversible inhibition",
+      b: "Allosteric inhibition",
+      c: "Irreversible inhibition",
+      d: "Non-competitive inhibition"
     },
-    correctAnswer: "b",
-    explanation: "Most enzymes function best at a pH close to physiological values, usually between 5 and 9."
+    correctAnswer: "a",
+    explanation:
+      "A competitive reversible inhibitor increases Km but leaves Vmax unchanged, because increasing substrate concentration can overcome inhibition."
   },
   {
-    question: "31. Enzymes, which are produced in inactive form in the living cells, are called:",
+    question: "4. Enzymes, which are produced in inactive form in the living cells, are called:",
     answers: {
       a: "Papain",
       b: "Lysozymes",
@@ -31,21 +49,24 @@ const questions = [
       d: "Proenzymes"
     },
     correctAnswer: "d",
-    explanation: "Proenzymes (also called zymogens) are inactive enzyme precursors that require activation to become functional."
+    explanation:
+      "Proenzymes (zymogens) are inactive precursors that are activated when needed, often by cleavage of specific peptide bonds."
   },
   {
-    question: "32. Activation or inactivation of certain enzymes is accomplished by covalent modification of the amino acid:",
+    question: "5. The non-protein part of an enzyme is called:",
     answers: {
-      a: "Hydroxy lysine",
-      b: "Phenylalanine",
-      c: "Lysine",
-      d: "Serine"
+      a: "Apoenzyme",
+      b: "Holoenzyme",
+      c: "Allosteric enzyme",
+      d: "Isoenzyme",
+      e: "Coenzyme"
     },
-    correctAnswer: "d",
-    explanation: "Covalent modification often involves phosphorylation or dephosphorylation of serine residues to regulate enzyme activity."
+    correctAnswer: "e",
+    explanation:
+      "Coenzymes are organic, non-protein components (often derived from vitamins) that assist enzymes during catalysis."
   },
   {
-    question: "33. These enzymes have different structure but the same catalytic function. Frequently they are oligomers made from different polypeptide chains. These enzymes are called:",
+    question: "6. These enzymes have different structures but the same catalytic function. They are called:",
     answers: {
       a: "Allosteric enzymes",
       b: "Isozymes",
@@ -53,54 +74,11 @@ const questions = [
       d: "Zymogens"
     },
     correctAnswer: "b",
-    explanation: "Isozymes are distinct molecular forms of the same enzyme that catalyze the same reaction but differ in structure or kinetics."
+    explanation:
+      "Isoenzymes (isozymes) are multiple molecular forms of the same enzyme that catalyze the same reaction but differ in structure or kinetics."
   },
   {
-    question: "34. In competitive enzyme activity inhibition, the inhibitor:",
-    answers: {
-      a: "Increases Vmax",
-      b: "Decreases Vmax",
-      c: "Does not affect Vmax",
-      d: "Decreases Vmax and Km"
-    },
-    correctAnswer: "c",
-    explanation: "Competitive inhibitors increase Km (require more substrate) but do not affect Vmax since inhibition can be overcome at high substrate concentrations."
-  },
-  {
-    question: "35. Which of these enzymes is increased in myocardial infarction?",
-    answers: {
-      a: "Alkaline phosphatase",
-      b: "Glutamate-oxaloacetate transaminase",
-      c: "Acid phosphatase",
-      d: "Creatine kinase (CK-MB)"
-    },
-    correctAnswer: "d",
-    explanation: "Creatine kinase MB isoenzyme (CK-MB) is specific to cardiac muscle and rises in blood after myocardial infarction."
-  },
-  {
-    question: "36. As regards isoenzymes, which of the following is incorrect:",
-    answers: {
-      a: "They have similar polypeptide chains.",
-      b: "They have different affinity to the substrate.",
-      c: "They can be separated by electrophoresis.",
-      d: "They catalyze the same reaction."
-    },
-    correctAnswer: "a",
-    explanation: "Isoenzymes differ in their polypeptide composition, so it is incorrect to say they have similar chains."
-  },
-  {
-    question: "37. Which statement is incorrect regarding feedback inhibition:",
-    answers: {
-      a: "Inhibition is usually allosteric.",
-      b: "The final end product inhibits an enzyme catalyzing an early step of the metabolic pathway.",
-      c: "It prevents the accumulation of unnecessary excessive products.",
-      d: "It is a type of competitive inhibition."
-      },
-    correctAnswer: "d",
-    explanation: "Feedback inhibition typically involves allosteric inhibition, not competitive inhibition, and helps regulate metabolic pathways."
-  },
-  {
-    question: "38. Allosteric inhibition of an enzyme involves which of the following?",
+    question: "7. Allosteric inhibition of an enzyme involves which of the following?",
     answers: {
       a: "Binding of an inhibitor to a site other than the substrate binding site.",
       b: "Binding of an inhibitor competitively to the substrate binding site.",
@@ -108,6 +86,43 @@ const questions = [
       d: "Allosteric inhibitors increase the affinity of the enzyme to its substrate."
     },
     correctAnswer: "a",
-    explanation: "Allosteric inhibitors bind to a separate regulatory site, causing conformational changes that reduce enzyme activity."
+    explanation:
+      "Allosteric inhibitors bind to a regulatory site distinct from the active site, causing conformational changes that reduce enzyme activity."
+  },
+  {
+    question: "8. When the velocity of enzyme activity is plotted against substrate concentration, which of the following is obtained?",
+    answers: {
+      a: "A hyperbolic curve",
+      b: "A parabola",
+      c: "A straight line with a positive slope",
+      d: "A straight line with a negative slope"
+    },
+    correctAnswer: "a",
+    explanation:
+      "A hyperbolic curve is obtained according to the Michaelis–Menten model, showing saturation kinetics as substrate concentration increases."
+  },
+  {
+    question: "9. Michaelis constant (Km) of an enzyme is:",
+    answers: {
+      a: "The substrate concentration which gives maximal velocity.",
+      b: "The substrate concentration which gives ½ the maximal velocity.",
+      c: "Half the substrate concentration which gives maximal velocity.",
+      d: "The enzyme concentration which gives maximal velocity."
+    },
+    correctAnswer: "b",
+    explanation:
+      "Km is the substrate concentration at which the enzyme operates at half its maximal velocity (Vmax/2). It reflects substrate affinity."
+  },
+  {
+    question: "10. Which of the following statements is true of enzyme catalysts?",
+    answers: {
+      a: "To be effective they must be present at the same concentration as their substrate.",
+      b: "They can increase the equilibrium constant for a given reaction.",
+      c: "They lower the activation energy for conversion of substrate to product.",
+      d: "Their catalytic activity is independent of pH."
+    },
+    correctAnswer: "c",
+    explanation:
+      "Enzymes catalyze reactions by providing an alternative pathway with lower activation energy, increasing reaction speed without changing equilibrium."
   }
 ];
